@@ -7,6 +7,8 @@ import net.sf.dynamicreports.report.builder.component.Components;
 import net.sf.dynamicreports.report.builder.datatype.DataTypes;
 import net.sf.dynamicreports.report.constant.HorizontalAlignment;
 import net.sf.dynamicreports.report.exception.DRException;
+import windows.manager.AddManagerUI;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
@@ -41,6 +43,10 @@ public class Connector{
     public ActionListener getAddPublisherBtnListener() {
         return new AddPublisherBtnListener();
     }
+
+
+
+
 
 
     private class EditBtnListener implements ActionListener{
@@ -105,6 +111,10 @@ public class Connector{
 
     public ActionListener getviewReportBtnListener() {
         return new viewReportBtnListener();
+    }
+
+    public ActionListener getAddMangerBtrListener() {
+        return new addMangerBtrListener();
     }
 
 
@@ -210,4 +220,13 @@ public class Connector{
             windows.manager.AddPublisherUi addPublisherUi = new windows.manager.AddPublisherUi();
         }
     }
+
+    private class addMangerBtrListener implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            AddManagerUI addMANGERUI = new AddManagerUI();
+        }
+    }
+
 }

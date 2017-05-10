@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class ManagerUI extends CustomerUI {
 
 
-    JButton addBookBtn,modifyBtn, orderBtn, confOrderBtn, addPublisherBtn, viewReportBtn;
+    JButton addBookBtn,modifyBtn, orderBtn, confOrderBtn, addPublisherBtn, viewReportBtn, addManagerBtn;
     protected JToolBar managerOptionsBar;
 
     /*
@@ -26,6 +26,8 @@ public class ManagerUI extends CustomerUI {
         confOrderBtn = new JButton("Confirm Book Order");
         addPublisherBtn = new JButton("Add Publisher");
         viewReportBtn = new JButton("View Reports");
+        addManagerBtn = new JButton("Add Manger");
+
 
         addBookBtn.addActionListener(super.connector.getaddBookBtnListener());
         modifyBtn.addActionListener(super.connector.getmodifyBtnListener());
@@ -33,6 +35,7 @@ public class ManagerUI extends CustomerUI {
         confOrderBtn.addActionListener(super.connector.getconfOrderBtnListener());
         viewReportBtn.addActionListener(super.connector.getviewReportBtnListener());
         addPublisherBtn.addActionListener(super.connector.getAddPublisherBtnListener());
+        addManagerBtn.addActionListener(super.connector.getAddMangerBtrListener());
 
         managerOptionsBar.add(addBookBtn);
         managerOptionsBar.add(modifyBtn);
@@ -40,6 +43,7 @@ public class ManagerUI extends CustomerUI {
         managerOptionsBar.add(confOrderBtn);
         managerOptionsBar.add(addPublisherBtn);
         managerOptionsBar.add(viewReportBtn);
+        managerOptionsBar.add(addManagerBtn);
         super.content.add(managerOptionsBar, BorderLayout.AFTER_LAST_LINE);
 
     }

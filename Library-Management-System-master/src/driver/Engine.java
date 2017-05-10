@@ -13,11 +13,11 @@ public class Engine {
 
     // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/book_store";
+    static final String DB_URL = "jdbc:mysql://localhost/BOOK_STORE";
 
     //  Database credentials
     static final String USER = "root";
-    static final String PASS = "1111";
+    static final String PASS = "As01022178704";
     static final String MgrSecurityCode = "0000";
 
     public static int IS_MANAGER = 0;
