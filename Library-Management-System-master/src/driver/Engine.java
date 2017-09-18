@@ -17,7 +17,7 @@ public class Engine {
 
     //  Database credentials
     static final String USER = "root";
-    static final String PASS = "As01022178704";
+    static final String PASS = "";
     static final String MgrSecurityCode = "0000";
 
     public static int IS_MANAGER = 0;
